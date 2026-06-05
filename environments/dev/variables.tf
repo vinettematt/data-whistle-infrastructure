@@ -12,7 +12,7 @@ variable "env" {
 variable "region" {
   description = "GCP region"
   type        = string
-  default     = "europe-west1"
+  default     = "europe-west9"
 }
 
 variable "github_repo_url" {

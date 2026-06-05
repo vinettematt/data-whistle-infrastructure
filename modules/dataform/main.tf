@@ -1,7 +1,16 @@
-variable "project_id" { type = string }
-variable "env"        { type = string }
-variable "region"     { type = string; default = "europe-west1" }
-variable "dataform_sa_email" { type = string }
+variable "project_id" { 
+  type = string 
+}
+variable "env"        { 
+  type = string 
+}
+variable "region"     { 
+  type = string
+  default = "europe-west9" 
+}
+variable "dataform_sa_email" { 
+  type = string 
+}
 variable "github_repo_url" {
   description = "URL du repo GitHub contenant les sources Dataform"
   type        = string

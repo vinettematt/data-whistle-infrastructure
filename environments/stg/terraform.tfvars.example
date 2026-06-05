@@ -1,3 +1,0 @@
-project_id      = "tdw-stg-XXXXXX"
-region          = "europe-west1"
-github_repo_url = "https://github.com/vinettasse/the-data-whistle-dataform"
