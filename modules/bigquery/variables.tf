@@ -8,7 +8,7 @@ variable "env" {
 
 variable "region" {
   type    = string
-  default = "europe-west1"
+  default = "europe-west9"
 }
 
 variable "dataform_sa_email" {
