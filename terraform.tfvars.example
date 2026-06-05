@@ -1,0 +1,6 @@
+# Copier ce fichier en terraform.tfvars et remplir les valeurs
+# Ne jamais committer terraform.tfvars (ajouté dans .gitignore)
+
+project_id      = "tdw-dev-XXXXXX"        # Ton project ID GCP dev
+region          = "europe-west1"
+github_repo_url = "https://github.com/vinettasse/the-data-whistle-dataform"
