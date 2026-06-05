@@ -22,6 +22,7 @@ variable "github_token_secret" {
 }
 
 resource "google_dataform_repository" "tdw" {
+  provider = google-beta
   name     = "tdw-${var.env}"
   project  = var.project_id
   region   = var.region
