@@ -40,15 +40,15 @@ variable "llm_api_key_secret" {
 # Images Docker (à builder et pusher dans Artifact Registry)
 variable "football_ingestion_image" {
   type    = string
-  default = "europe-west1-docker.pkg.dev/PROJECT_ID/tdw/football-ingestion:latest"
+  default = "europe-west1-docker.pkg.dev/data-whistle-dev/tdw/football-ingestion:latest"
 }
 
 variable "nfl_ingestion_image" {
   type    = string
-  default = "europe-west1-docker.pkg.dev/PROJECT_ID/tdw/nfl-ingestion:latest"
+  default = "europe-west1-docker.pkg.dev/data-whistle-dev/tdw/nfl-ingestion:latest"
 }
 
 variable "prompt_builder_image" {
   type    = string
-  default = "europe-west1-docker.pkg.dev/PROJECT_ID/tdw/prompt-builder:latest"
+  default = "europe-west1-docker.pkg.dev/data-whistle-dev/tdw/prompt-builder:latest"
 }

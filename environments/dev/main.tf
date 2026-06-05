@@ -63,6 +63,9 @@ module "cloud_run" {
   landing_bucket_name     = module.gcs.landing_bucket_name
   raw_dataset_id          = module.bigquery.raw_dataset_id
   marts_dataset_id        = module.bigquery.marts_dataset_id
+  football_ingestion_image = var.football_ingestion_image
+  nfl_ingestion_image      = var.nfl_ingestion_image
+  prompt_builder_image     = var.prompt_builder_image
 }
 
 # ── Scheduler — triggers automatiques ──

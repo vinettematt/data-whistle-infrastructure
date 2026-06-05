@@ -19,3 +19,18 @@ variable "github_repo_url" {
   description = "URL du repo GitHub Dataform"
   type        = string
 }
+
+variable "football_ingestion_image" {
+  type    = string
+  default = "python:3.11-slim"
+}
+
+variable "nfl_ingestion_image" {
+  type    = string
+  default = "python:3.11-slim"
+}
+
+variable "prompt_builder_image" {
+  type    = string
+  default = "python:3.11-slim"
+}
