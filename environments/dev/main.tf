@@ -73,11 +73,10 @@ module "scheduler" {
   source                      = "../../modules/scheduler"
   project_id                  = var.project_id
   env                         = var.env
-  region                      = var.region
+  region                      = var.scheduler_region
   scheduler_sa_email          = module.iam.scheduler_sa_email
   football_ingestion_job_name = module.cloud_run.football_ingestion_job_name
   nfl_ingestion_job_name      = module.cloud_run.nfl_ingestion_job_name
-  prompt_builder_url          = module.cloud_run.prompt_builder_url
 }
 
 # ── Dataform — repository ──

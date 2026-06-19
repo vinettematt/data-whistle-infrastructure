@@ -15,6 +15,12 @@ variable "region" {
   default     = "europe-west9"
 }
 
+variable "scheduler_region" {
+  description = "GCP Scheduler region"
+  type        = string
+  default     = "europe-west1"
+}
+
 variable "github_repo_url" {
   description = "URL du repo GitHub Dataform"
   type        = string

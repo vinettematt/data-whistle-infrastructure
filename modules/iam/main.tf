@@ -79,6 +79,20 @@ resource "google_project_iam_member" "prompt_builder_bq_job" {
   member  = "serviceAccount:${google_service_account.prompt_builder.email}"
 }
 
+# Ingestion : lecture des secrets API
+resource "google_project_iam_member" "ingestion_secret_accessor" {
+  project = var.project_id
+  role    = "roles/secretmanager.secretAccessor"
+  member  = "serviceAccount:${google_service_account.ingestion.email}"
+}
+
+# Prompt builder : lecture des secrets API (clé LLM)
+resource "google_project_iam_member" "prompt_builder_secret_accessor" {
+  project = var.project_id
+  role    = "roles/secretmanager.secretAccessor"
+  member  = "serviceAccount:${google_service_account.prompt_builder.email}"
+}
+
 # Scheduler : invocation Cloud Run
 resource "google_project_iam_member" "scheduler_run_invoker" {
   project = var.project_id
